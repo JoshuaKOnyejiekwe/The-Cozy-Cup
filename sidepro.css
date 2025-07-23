@@ -1,0 +1,87 @@
+/*Flex Box (1D)*/
+body{
+    font-family: 'Georgia, 'Times New Roman', Times, serif';
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+}
+
+
+.flexboxnavi{    /* flexboxnavi*/  /*Navi background , border , text */
+    display: flex; /* Tells it if your using grid or box */
+    justify-content: flex-start; /* Puts content on the left (start) */
+    position: sticky;
+    width: 100vw;
+    padding: 1rem 0; /* Changes the size of how big the nav box is */
+    margin-bottom: 0rem; /* Nav margin, moves everything in nav*/
+    box-sizing: border-box;
+    gap: 1% ; /* Adds a gap around the Nav text */
+    background: #f1f8f6; /* Navi bar background*/
+    flex-flow: row wrap; /* 1st is Flex dirc, second is the wrp,  1st: How do you the boxes to be placed/appear*/
+    border: 2px solid rgb(0, 0, 0); /* Nav border color */
+} 
+
+
+.flexboxnaviitems{   /* flexboxnavi */ /* controls text */
+    background: rgba(255, 255, 255, 0.616); /* Nav txt background color */
+    color: rgb(0, 0, 0); /* Nav txt Color*/
+    padding: 1.5rem ; /* Changes the size of how big the nav box is */
+    font-size: 30px; /* font size */
+    font-weight: 700; /* How Bold the txt is */
+    text-decoration-line: none; /* Removes any text decs ex: underline */
+} 
+
+.flexboxnaviitems:hover{   /* flexboxnavi */
+    color: #008248;
+}
+
+
+/*Flex Grid (2D)*/
+
+.FlexboxSections{    /* FlexboxSections */
+    display: flex; /* Tells it if your using grid or box */
+    justify-content: center;
+    align-items: center;
+    background: #f3f1e7; /* Background ground color for the section */
+    width: 100%;
+    height: 250%;
+    padding: 3rem;
+    box-sizing: border-box;
+    border:solid 2px black;
+}
+
+ 
+.FlexboxContent{    /* FlexboxSections */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%; /* fits inside the padded container */
+    max-width: 550px;
+    aspect-ratio: 1/1;
+    background: #090deb; /* Inside of FlexbxSecs, layed over its backgrd*/
+    color: #fff;
+    padding: 1rem;
+    box-sizing: border-box;
+    border:solid black;
+
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.joinbutton{
+    display: inline-block;
+    border-radius: 999px;
+    background-color: #008248;
+    color: #090deb;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-top: 1.5rem;
+}
+
+.joinButton:hover {
+    background-color: #006c3b; /* Slightly darker green on hover */
+}
