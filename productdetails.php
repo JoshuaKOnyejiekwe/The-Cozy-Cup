@@ -22,7 +22,7 @@ if ($result && $result->num_rows > 0) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?= $item['name'] ?></title>
+  <title><?php echo $item['name']; ?></title>
   
   <link rel="stylesheet" href="productdetails.css">
   <link rel="stylesheet" href="the-cozy-cup.css">
