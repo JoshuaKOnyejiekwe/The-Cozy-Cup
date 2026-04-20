@@ -1,8 +1,8 @@
-A personal full-stack project recreating the Starbucks website to practice modern front-end layout techniques and backend fundamentals that is actively in development
+A full-stack project that is actively in development
 
 ## Project Overview
 
-This project is a recreation of the Starbucks website built from scratch. The goal is to replicate the look, feel, and structure of a production-level website while reinforcing full-stack development skills.
+This project is Full-Stack website built from scratch. The goal is to replicate the look, feel, and structure of a production-level website while reinforcing full-stack development skills.
 
 The project emphasizes:
 
@@ -18,7 +18,7 @@ Front End
 
 HTML5
 
-CSS3
+CSS
 
 Flexbox
 
