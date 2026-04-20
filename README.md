@@ -14,7 +14,7 @@ Front-end and back-end integration
 
 ## Technologies Used
 
-Front End
+##Front End
 
 HTML5
 
@@ -24,7 +24,7 @@ Flexbox
 
 CSS Grid
 
-Back End
+## Back End
 
 PHP
 
