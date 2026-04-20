@@ -14,6 +14,6 @@ Front-end and back-end integration
 
 ## Technologies Used
 
-Front End: HTML/CSS
+Front End: HTML/CSS , Java Script
 
 Back End: PHP , SQL
