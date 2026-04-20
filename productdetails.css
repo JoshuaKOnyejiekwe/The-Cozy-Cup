@@ -1,0 +1,70 @@
+/* ===== BODY ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  color: #333;
+}
+
+.image-card {
+  flex: 1.2;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-info h1 {
+  margin: 50;
+  font-size: 32px;
+}
+
+.product-page {
+  display: flex;        /* makes them side by side */
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 25px;            /* space between image and text */
+}
+
+.product-page img {
+  width: 75%;
+  height: 65%;
+  object-fit: cover;
+  border: 3px solid #f5f5f546;
+  border-radius: 20px;
+  /* subtle shadow */
+  box-shadow: 0 5px 15px rgb(0, 0, 0);
+  margin-left: 13%;
+  margin-top: 90px;
+}
+
+.product-desc-box {
+  background: #f8f8f8;
+  padding: 17% 15px;
+  border-radius: 12px;
+  border: 3px solid #f5f5f546;
+  /* subtle shadow */
+  box-shadow: 0 5px 15px rgb(0, 0, 0);
+  margin: 5px 0;
+  margin-right: 5%;
+  margin-top: 13%;
+}
+
+/* Title inside the box */
+.product-desc-box h4 {
+  margin-bottom: 69px;
+  font-size: 14px;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Actual description text */
+.product-desc-box p {
+  margin: 0;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.5;
+  max-width: 500px;
+}

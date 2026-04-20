@@ -1,87 +1,185 @@
-/*Flex Box (1D)*/
-body{
-    font-family: 'Georgia, 'Times New Roman', Times, serif';
-    background-color: #fff;
-    margin: 0;
-    padding: 0;
-    color: rgb(0, 0, 0);
+body {
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+/* ===== NAV ===== */
+.flexboxnavi {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #f1f8f6;
+  border: 2px solid #000;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.flexboxnaviitems {
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+
+.flexboxnaviitems:hover {
+  color: #007a33;
+}
+
+/* ===== SECTION 1 ===== */
+.FlexboxSections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  padding: 4rem;
+  background: #f3f1e7;
+  border: 2px solid #000;
+}
+
+.FlexboxContent {
+  max-width: 520px;
+}
+
+.FlexboxContent img {
+  width: 150%;
+}
+
+/* ===== BUTTON ===== */
+.joinbutton {
+  display: inline-block;
+  background: #007a33;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.joinbutton:hover{
+  background-color: #004f33; /* darker green */
+}
+
+/* ===== SECTION 2 ===== */
+.FlexboxSections2 {
+  text-align: center;
+  padding: 4rem;
+  border: 2px solid #000;
+}
+
+.flexcircle2 {
+  display: flex;             /* horizontal layout */
+  justify-content: center;   /* center row */
+  gap: 3rem;                 /* space between each step */
+  align-items: flex-start;   /* aligns all containers at top */
+  flex-wrap: wrap;           /* allows wrapping on small screens */
+}
+
+.grncircle-container {       /* stacks circle + text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 200px;          /* optional, keeps text from stretching */
+}
+
+.grncircle {
+  width: 50px;
+  height: 50px;
+  background-color: #007a33;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 10px; /* space below circle */
 }
 
 
-.flexboxnavi{    /* flexboxnavi*/  /*Navi background , border , text */
-    display: flex; /* Tells it if your using grid or box */
-    justify-content: flex-start; /* Puts content on the left (start) */
-    position: sticky;
-    width: 100vw;
-    padding: 1rem 0; /* Changes the size of how big the nav box is */
-    margin-bottom: 0rem; /* Nav margin, moves everything in nav*/
-    box-sizing: border-box;
-    gap: 1% ; /* Adds a gap around the Nav text */
-    background: #f1f8f6; /* Navi bar background*/
-    flex-flow: row wrap; /* 1st is Flex dirc, second is the wrp,  1st: How do you the boxes to be placed/appear*/
-    border: 2px solid rgb(0, 0, 0); /* Nav border color */
-} 
+.circlenum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #007a33;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-weight: bold;
+}
 
+.circle-text {
+  margin-bottom: 6px;
+  font-size: 1rem;
+}
 
-.flexboxnaviitems{   /* flexboxnavi */ /* controls text */
-    background: rgba(255, 255, 255, 0.616); /* Nav txt background color */
-    color: rgb(0, 0, 0); /* Nav txt Color*/
-    padding: 1.5rem ; /* Changes the size of how big the nav box is */
-    font-size: 30px; /* font size */
-    font-weight: 700; /* How Bold the txt is */
-    text-decoration-line: none; /* Removes any text decs ex: underline */
-} 
-
-.flexboxnaviitems:hover{   /* flexboxnavi */
-    color: #008248;
+.grncircle-container p {
+  font-size: 0.9rem;
+  color: #333;
 }
 
 
-/*Flex Grid (2D)*/
-
-.FlexboxSections{    /* FlexboxSections */
-    display: flex; /* Tells it if your using grid or box */
-    justify-content: center;
-    align-items: center;
-    background: #f3f1e7; /* Background ground color for the section */
-    width: 100%;
-    height: 250%;
-    padding: 3rem;
-    box-sizing: border-box;
-    border:solid 2px black;
+/* ===== SECTION 3: REWARDS ===== */
+.FlexboxSections3 {
+  
+  background: #D4E9E2;
+  padding: 4rem;
+  text-align: center;
+  border: 2px solid #000;
+}
+.rewards-title { /* Get your favorites for free*/
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00110c;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+.rewards-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
 }
 
- 
-.FlexboxContent{    /* FlexboxSections */
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%; /* fits inside the padded container */
-    max-width: 550px;
-    aspect-ratio: 1/1;
-    background: #090deb; /* Inside of FlexbxSecs, layed over its backgrd*/
-    color: #fff;
-    padding: 1rem;
-    box-sizing: border-box;
-    border:solid black;
-
+.reward-tab {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding-bottom: 0.5rem;
+  border-bottom: 4px solid transparent;
 }
 
-.underline {
-    text-decoration: underline;
+.reward-tab.active { /* The green underline */
+  border-bottom: 4px solid #007a33;
 }
 
-.joinbutton{
-    display: inline-block;
-    border-radius: 999px;
-    background-color: #008248;
-    color: #090deb;
-    font-weight: bolder;
-    font-size: 1.2rem;
-    text-decoration: none;
-    margin-top: 1.5rem;
+.reward-content {
+  display: none;
+  max-width: 900px;
+  margin: auto;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1.6rem;
 }
 
-.joinButton:hover {
-    background-color: #006c3b; /* Slightly darker green on hover */
+.reward-content.active {
+  display: flex;
 }
+
+.reward-content img { /* Uniforms all imgs in rewards cont */
+  width: 220px; /* Changes the img vert size*/
+  height: 220px; /* Locks the border hight*/
+  object-fit: contain;
+}
+
+/* ===== SECTION 4: Endless Extras ===== */
+/* .FlexboxSections4 {  */
