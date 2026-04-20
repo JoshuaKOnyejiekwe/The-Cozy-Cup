@@ -1,4 +1,3 @@
-<!--SideProject-->
 <?php
 
 // Database credentials

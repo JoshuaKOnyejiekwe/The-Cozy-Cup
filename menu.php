@@ -3,7 +3,8 @@
   error_reporting(E_ALL);
   ini_set('display_errors', 1);
 
-  include 'sideproject_db.php';
+  include 'firebase_db.php';
+
 
   if ($conn->connect_error) {
       die("Connection failed: " . $conn->connect_error);
@@ -19,7 +20,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Page</title>
-    <link rel="stylesheet" href="sidepro.css">
+    <link rel="stylesheet" href="the-cozy-cup.css">
     <link rel="stylesheet" href="menu.css"> <!-- menu CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   </head>

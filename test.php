@@ -13,7 +13,7 @@ $dbname = "sideproject_db";
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Exp FlexGrid/Box</title>
-    <link rel="stylesheet" href="sidepro.css">
+    <link rel="stylesheet" href="the-cozy-cup.css">
 </head>
 <body>
 	<div class="flexboxnavi">

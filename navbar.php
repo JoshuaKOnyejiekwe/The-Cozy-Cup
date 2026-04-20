@@ -1,8 +1,8 @@
 <!-- navbar.php -->
 <nav class="flexboxnavi">
   <div class="nav-left">
-    <a href="http://localhost:8888/SideProject/index.php" class="flexboxnaviitems">Home</a>
-    <a href="menu.php" class="flexboxnaviitems">Menu</a>
+<a href="http://localhost:8888/TheCozyCup/index.php" class="flexboxnaviitems">Home</a>
+<a href="http://localhost:8888/TheCozyCup/menu.php" class="flexboxnaviitems">Menu</a>
     <a href="#" class="flexboxnaviitems">Rewards</a>
     <a href="#" class="flexboxnaviitems">Gift Cards</a>
   </div>

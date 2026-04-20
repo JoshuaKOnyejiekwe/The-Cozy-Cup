@@ -1,5 +1,5 @@
 <?php
-include 'sideproject_db.php';
+include 'firebase_db.php';
 
 # Page reads that ID
 $id = isset($_GET['id']) ? intval($_GET['id']) : 0;
@@ -25,7 +25,7 @@ if ($result && $result->num_rows > 0) {
   <title><?= $item['name'] ?></title>
   
   <link rel="stylesheet" href="productdetails.css">
-  <link rel="stylesheet" href="sidepro.css">
+  <link rel="stylesheet" href="the-cozy-cup.css">
 </head>
 <body>
 
