@@ -68,3 +68,24 @@ body {
   line-height: 1.5;
   max-width: 500px;
 }
+
+
+/* ADD THIS TO THE BOTTOM OF YOUR productdetails.css */
+ 
+/* ─── RESPONSIVE: TABLET (max 900px) ─────────── */
+@media (max-width: 900px) {
+  .product-page { flex-direction: column; align-items: center; padding: 2rem; gap: 2rem; }
+  .product-page img { width: 80%; margin-left: 0; margin-top: 2rem; }
+  .product-desc-box { margin-right: 0; margin-top: 1rem; padding: 1.5rem; }
+}
+ 
+/* ─── RESPONSIVE: MOBILE (max 600px) ─────────── */
+@media (max-width: 600px) {
+  .product-page { padding: 1rem; }
+  .product-page img { width: 95%; margin-top: 1rem; }
+  .product-info h1 { font-size: 24px; }
+  .product-desc-box { padding: 1rem; }
+  .product-desc-box h4 { margin-bottom: 12px; }
+  .price { font-size: 1.4rem; }
+}
+ 

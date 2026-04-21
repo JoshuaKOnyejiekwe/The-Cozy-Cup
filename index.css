@@ -12,23 +12,40 @@ body {
   padding: 1rem;
   background: #f1f8f6;
   border: 2px solid #000;
+  /*position: sticky;
+  top: 0;
+  z-index: 100;*/
 }
 
 .nav-left, .nav-right {
   display: flex;
-  gap: 1rem;
-  align-items: end;
+  gap: 1.5rem;
+  align-items: center;
 }
 
 .flexboxnaviitems {
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-decoration: none;
   font-weight: bold;
   color: #000;
+  transition: color 0.2s;
 }
 
 .flexboxnaviitems:hover {
   color: #007a33;
+}
+
+.search-bar {
+  padding: 0.45rem 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+ 
+.search-bar:focus {
+  border-color: #007a33;
 }
 
 /* ===== SECTION 1 ===== */
@@ -40,6 +57,8 @@ body {
   padding: 4rem;
   background: #f3f1e7;
   border: 2px solid #000;
+  /*background: linear-gradient(135deg, #f3f1e7 60%, #d4e9e2 100%);
+  min-height: 80vh;*/
 }
 
 .FlexboxContent {
@@ -49,26 +68,57 @@ body {
   transition: 0.3s ease;
 }
 
+/*.flextext {
+  max-width: 480px;
+}
+ 
+.flextext h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #1e3932;
+  margin-bottom: 1rem;
+}
+ 
+.flextext p {
+  font-size: 1.1rem;
+  color: #4a4a4a;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+ 
+.underline {
+  text-decoration: underline;
+  color: #007a33;
+  font-weight: 600;
+}*/
+
 .FlexboxContent img {
   width: 150%;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  transition: 0.3s ease;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
 }
+
+/*.FlexboxContent img:hover {
+  transform: translateY(-6px);
+}*/
 
 /* ===== BUTTON ===== */
 .joinbutton {
   display: inline-block;
-  background: #007a33;
+  background: #1e3932;
   color: #fff;
   padding: 0.75rem 1.5rem;
   border-radius: 999px;
   text-decoration: none;
   font-weight: bold;
+  transition: background 0.2s;
 }
 
 .joinbutton:hover{
   background-color: #004f33; /* darker green */
+  transform: translateY(-2px);
 }
 
 /* ===== SECTION 2 ===== */
@@ -92,20 +142,30 @@ body {
   align-items: center;
   text-align: center;
   max-width: 200px;          /* optional, keeps text from stretching */
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease;
+}
+
+.grncircle-container:hover {
+  transform: translateY(-6px);
 }
 
 .grncircle {
-  width: 50px;
-  height: 50px;
-  background-color: #007a33;
+ width: 60px;
+  height: 60px;
+  background: #007a33;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   font-weight: bold;
-  font-size: 1.5rem;
-  margin-bottom: 10px; /* space below circle */
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 12px rgba(0,122,51,0.3);
 }
 
 
@@ -124,22 +184,25 @@ body {
 .circle-text {
   margin-bottom: 6px;
   font-size: 1rem;
+  color: #1e3932;
+  font-weight: 700;
 }
 
 .grncircle-container p {
   font-size: 0.9rem;
   color: #333;
+  line-height: 1.6;
 }
 
 
 /* ===== SECTION 3: REWARDS ===== */
 .FlexboxSections3 {
-  
   background: #D4E9E2;
   padding: 4rem;
   text-align: center;
   border: 2px solid #000;
 }
+
 .rewards-title { /* Get your favorites for free*/
   font-size: 2.5rem;
   font-weight: 700;
@@ -147,11 +210,13 @@ body {
   margin-bottom: 2.5rem;
   text-align: center;
 }
+
 .rewards-tabs {
   display: flex;
   justify-content: center;
   gap: 2.5rem;
   margin-bottom: 3rem;
+  flex-wrap: wrap;
 }
 
 .reward-tab {
@@ -162,10 +227,17 @@ body {
   cursor: pointer;
   padding-bottom: 0.5rem;
   border-bottom: 4px solid transparent;
+  color: #1e3932;
+  transition: border-color 0.2s, color 0.2s
+}
+
+.reward-tab:hover {
+  color: #007a33;
 }
 
 .reward-tab.active { /* The green underline */
   border-bottom: 4px solid #007a33;
+  color: #007a33;
 }
 
 .reward-content {
@@ -175,6 +247,11 @@ body {
   align-items: center;
   gap: 3rem;
   font-size: 1.6rem;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  text-align: left;
 }
 
 .reward-content.active {
@@ -185,7 +262,141 @@ body {
   width: 220px; /* Changes the img vert size*/
   height: 220px; /* Locks the border hight*/
   object-fit: contain;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.reward-content h3 {
+  font-size: 1.3rem;
+  color: #1e3932;
+  margin-bottom: 0.75rem;
+}
+ 
+.reward-content p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.7;
 }
 
 /* ===== SECTION 4: Endless Extras ===== */
 /* .FlexboxSections4 {  */
+
+
+/* ─── RESPONSIVE: TABLET (max 900px) ─────────── */
+ 
+@media (max-width: 900px) {
+ 
+  .FlexboxSections {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 4rem 2rem;
+    text-align: center;
+    min-height: auto;
+  }
+ 
+  .flextext h1 {
+    font-size: 2.2rem;
+  }
+ 
+  .FlexboxContent img {
+    width: 100%;
+    max-width: 380px;
+  }
+ 
+  .flexcircle2 {
+    gap: 2rem;
+  }
+ 
+  .reward-content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+ 
+  .rewards-tabs {
+    gap: 1rem;
+  }
+ 
+  .reward-tab {
+    font-size: 1.1rem;
+  }
+}
+ 
+ 
+/* ─── RESPONSIVE: MOBILE (max 600px) ─────────── */
+ 
+
+@media (max-width: 600px) {
+ 
+  .flexboxnavi {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+ 
+  .nav-left, .nav-right {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+ 
+  .flexboxnaviitems {
+    font-size: 0.85rem;
+  }
+ 
+  .search-bar {
+    width: 100%;
+  }
+ 
+  .FlexboxSections {
+    padding: 3rem 1.5rem;
+  }
+ 
+  .flextext h1 {
+    font-size: 1.8rem;
+  }
+ 
+  .flextext p {
+    font-size: 0.95rem;
+  }
+ 
+  .FlexboxSections2 {
+    padding: 3rem 1.5rem;
+  }
+ 
+  .flextext2 h1 {
+    font-size: 1.6rem;
+  }
+ 
+  .grncircle-container {
+    max-width: 100%;
+    width: 100%;
+  }
+ 
+  .flexcircle2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+ 
+  .FlexboxSections3 {
+    padding: 3rem 1rem;
+  }
+ 
+  .rewards-title {
+    font-size: 1.8rem;
+  }
+ 
+  .reward-tab {
+    font-size: 1rem;
+  }
+ 
+  .reward-content {
+    padding: 1.5rem;
+  }
+ 
+  .reward-content img {
+    width: 160px;
+    height: 160px;
+  }
+}

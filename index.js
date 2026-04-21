@@ -1,6 +1,5 @@
 // index.js — rewards tab switcher for the home page
 
-import { renderNavbar } from "./navbar.js";
 
 renderNavbar();
 
