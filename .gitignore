@@ -1,8 +1,0 @@
-# Firebase Service Account - NEVER COMMIT THIS FILE
-firebase-service-account.json
-
-# Common PHP ignores
-*.log
-.DS_Store
-.idea
-.vscode
