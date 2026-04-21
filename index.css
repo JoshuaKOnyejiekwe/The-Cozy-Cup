@@ -48,6 +48,8 @@ body {
 
 .FlexboxContent img {
   width: 150%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
 }
 
 /* ===== BUTTON ===== */
