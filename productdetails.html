@@ -1,21 +1,3 @@
-<!-- ?php
-include 'sideproject_db.php';
-
-# Page reads that ID
-$id = isset($_GET['id']) ? intval($_GET['id']) : 0;
-
-# Query uses that ID
-$result = $conn->query("SELECT * FROM menu_item WHERE id=$id");
-
-if ($result && $result->num_rows > 0) {
-    $item = $result->fetch_assoc();
-} else {
-    echo "Product not found";
-    exit;
-}
-? -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,23 +24,3 @@ if ($result && $result->num_rows > 0) {
  
 </body>
 </html>
-
-
-<!-- <div class="product-page">
-
-  <div class="image-card">
-    <img src="?= $item['image'] ?>" class="product-img">
-  </div>
-
-  <div class="product-info">
-    <h1>?= $item['name'] ?></h1>
-
-    <div class="product-desc-box">
-      <h4>Description</h4>
-      <p>?= $item['description'] ?></p>
-    </div>
-
-    <h2 class="price">$?= number_format($item['price'], 2) ?></h2>
-  </div>
-
-</div> --
