@@ -2,7 +2,7 @@
 <nav class="flexboxnavi">
   <div class="nav-left">
 <a href="/" class="flexboxnaviitems">Home</a>
-<a href="/menu.php" class="flexboxnaviitems">Menu</a>
+<a href="/menu" class="flexboxnaviitems">Menu</a>
     <a href="#" class="flexboxnaviitems">Rewards</a>
     <a href="#" class="flexboxnaviitems">Gift Cards</a>
   </div>
