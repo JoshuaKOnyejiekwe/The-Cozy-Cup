@@ -5,6 +5,6 @@
     { "src": "/menu", "use": "vercel-php@0.7.2" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/$1" }
+    { "src": "/(.*\\.(css|js|jpg|png))", "dest": "/$1" }
   ]
 }
