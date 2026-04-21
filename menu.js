@@ -12,7 +12,7 @@ import {
 renderNavbar();
 
 const container = document.getElementById("menu-container");
-
+console.log("thecozycup-f6615:", projectId);
 
 // ─── Fetch & Render ────────────────────────────────────────────────────────────
 
