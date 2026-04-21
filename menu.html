@@ -1,19 +1,3 @@
-<!-- ?php
-  session_start();
-  error_reporting(E_ALL);
-  ini_set('display_errors', 1);
-
-  include 'sideproject_db.php';
-
-
-  if ($conn->connect_error) {
-      die("Connection failed: " . $conn->connect_error);
-  } else {
-      echo "";
-  }
-? -->
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -41,42 +25,6 @@
   </div>
 
     
-<!--?php
-$sql = "SELECT * FROM menu_item ORDER BY category, name";
-$result = $conn->query($sql);
-
-$currentCategory = '';
-
-while ($row = $result->fetch_assoc()) {
-
-    if ($currentCategory != $row['category']) {
-
-        if ($currentCategory != '') {
-            echo '</div>';
-        }
-
-        $currentCategory = $row['category'];
-
-        echo '<h2 class="menu-category">'.$currentCategory.'</h2>';
-        echo '<div class="menu-items">';
-    }
-
-    # CLICKABLE CARD
-    echo '<a href="productdetails.php?id='.$row['id'].'" class="menu-link">';
-
-    echo '<div class="menu-item-card">';
-    echo '<img src="'.$row['image'].'" alt="'.$row['name'].'">';
-    echo '<h3>'.$row['name'].'</h3>';
-    echo '<p>'.$row['description'].'</p>';
-    echo '</div>';
-
-    echo '</a>';
-}
-
-echo '</div>';
-? -->
-
-
     <!-- Coffee --
     <h2 class="menu-category">Coffee</h2>
     <div class="menu-items">
@@ -86,15 +34,11 @@ echo '</div>';
         <p>Rich and bold espresso shots.</p>
       </div>
 
-
-
       <div class="menu-item-card">
         <img src="Assets/Coldbrew.jpg" alt="A Cold Brew in a round glass cup">
         <h3>Cold Brew</h3>
         <p>Slow-steeped, smooth, and never bitter.</p>
       </div>
-
-
 
       <div class="menu-item-card">
       <img src="Assets/Americano.jpg" alt="">
@@ -102,15 +46,11 @@ echo '</div>';
         <p>Espresso softened with hot water. Clean and full-bodied.</p>
       </div>
 
-
-
       <div class="menu-item-card">
       <img src="Assets/Black Coffee.jpg" alt="">
         <h3>Black Coffee</h3>
         <p>Simple, fresh-brewed, and straight to the point.</p>
       </div>
-
-
 
       <div class="menu-item-card">
       <img src="Assets/latte.jpg" alt="">
@@ -118,21 +58,17 @@ echo '</div>';
         <p>Creamy steamed milk with a smooth espresso base.</p>
       </div>
 
-
-
       <div class="menu-item-card">
       <img src="Assets/Cortado.jpg" alt="">
         <h3>Cortado</h3>
         <p>Equal parts espresso and warm milk. Bold and balanced.</p>
       </div>
 
-
-
       <div class="menu-item-card">
       <img src="Assets/Cappuccino.jpg" alt="">
         <h3>Cappuccino</h3>
         <p>Bold espresso topped with thick, velvety foam.</p>
-      </div>
+      --->
 
 
 <!------------------------------------------------------------------------------------------------->
@@ -192,7 +128,7 @@ echo '</div>';
       <img src="Assets/Iced Matcha.jpg" alt="">
         <h3>Iced Matcha Latte</h3>
         <p>Earthy matcha blended with cold milk over ice.</p>
-      </div>
+      -->
 
 
 <!--------------------------------------------------------------------------------------------------->
@@ -252,4 +188,4 @@ echo '</div>';
       <img src="Assets/croissants.jpg" alt="">
         <h3>Butter Croissant</h3>
         <p>Golden, buttery, and perfectly flaky.</p>
-      </div>
+      -->
