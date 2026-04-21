@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Menu Page</title> <link rel="stylesheet" href="menu.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
+        <link rel="stylesheet" href="auth.css"> </head> <body> <!-- Navbar + Auth Modal injected by navbar.js --> 
+            <nav class="flexboxnavi"> <div class="nav-left"> <a href="/" class="flexboxnaviitems">Home</a> 
+                <a href="/menu.html" class="flexboxnaviitems">Menu</a> 
+                <a href="#" class="flexboxnaviitems">Rewards</a> 
+                <a href="#" class="flexboxnaviitems">Gift Cards</a> 
+            </div> <div class="nav-right"> 
+                <input type="text" placeholder="Search..." class="search-bar"> 
+                <a href="#" class="flexboxnaviitems">Find a store</a> 
+                <a href="#" class="flexboxnaviitems">Sign in</a> 
+                <a href="#" class="flexboxnaviitems join">Join Now</a> 
+                <span class="flexboxnaviitems hidden" id="nav-user"></span> 
+                <a href="#" class="flexboxnaviitems hidden" id="nav-signout">Sign Out</a> 
+            </div> </nav> <div class="menu-page"> <h1>Our Menu</h1> 
+                <p>Welcome! Here’s what we have to offer</p> 
+                <div class="menu-items"> <!-- Dynamic content will be injected by auth.js --> </div> 
+            </div> <!-- ===== JS ===== --> <script type="module"> import { renderNavbar } from "./navbar.js"; import { getMenuItems } from "./firebase.js"; import "./auth.js"; 
+            // Render shared navbar + auth modal renderNavbar(); 
+            // // Fetch and display menu items (Firestore) (async () => { const menuItems = await getMenuItems(); const menuContainer = document.querySelector('.menu-items'); 
+            // if (menuItems.length > 0) { menuItems.forEach(item => { const card = document.createElement('div'); 
+            // card.className = 'menu-item-card'; card.innerHTML = ` <a href="/productdetails.html?id=${item.id}" class="menu-link"> <div class="menu-item-card"> <img src="${item.image}" alt="${item.name}"> <h3>${item.name}</h3> <p>${item.description}</p> </div> </a> `; menuContainer.appendChild(card); }); } else { menuContainer.textContent = 'No menu items found'; } })(); </script> </body> </html>

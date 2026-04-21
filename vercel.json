@@ -1,0 +1,16 @@
+{  
+  "routes": [  
+    {  
+      "src": "/",  
+      "dest": "/index.html"  
+    },  
+    {  
+      "src": "/menu.html",  
+      "dest": "/menu.html"  
+    },  
+    {  
+      "src": "/productdetails.html",  
+      "dest": "/productdetails.html"  
+    }  
+  ]  
+}
