@@ -6,6 +6,7 @@ export function renderNavbar() {
  
   nav.innerHTML = `
     <div class="nav-left">
+      <a href="index.html" class="flexboxnaviitems">Home</a>
       <a href="menu.html" class="flexboxnaviitems">Menu</a>
       <a href="#"         class="flexboxnaviitems">Rewards</a>
       <a href="#"         class="flexboxnaviitems">Gift Cards</a>
