@@ -12,9 +12,9 @@ body {
   padding: 1rem;
   background: #f1f8f6;
   border: 2px solid #000;
-  /*position: sticky;
+  position: sticky;  /*remove if it bugs out*/
   top: 0;
-  z-index: 100;*/
+  z-index: 100;
 }
 
 .nav-left, .nav-right {
@@ -57,8 +57,8 @@ body {
   padding: 4rem;
   background: #f3f1e7;
   border: 2px solid #000;
-  /*background: linear-gradient(135deg, #f3f1e7 60%, #d4e9e2 100%);
-  min-height: 80vh;*/
+  background: linear-gradient(135deg, #f3f1e7 60%, #d4e9e2 100%);     /*remove if it bugs out*/
+  min-height: 80vh;
 }
 
 .FlexboxContent {
@@ -68,7 +68,7 @@ body {
   transition: 0.3s ease;
 }
 
-/*.flextext {
+.flextext {                                       /*remove if it bugs out*/
   max-width: 480px;
 }
  
@@ -98,11 +98,11 @@ body {
   border-radius: 12px;
   box-shadow: 0 20px 60px rgba(0,0,0,0.08);
   transition: transform 0.3s ease;
-}
+}                                                /*remove if it bugs out*/
 
-/*.FlexboxContent img:hover {
+.FlexboxContent img:hover {
   transform: translateY(-6px);
-}*/
+}                                                /*remove if it bugs out*/
 
 /* ===== BUTTON ===== */
 .joinbutton {
