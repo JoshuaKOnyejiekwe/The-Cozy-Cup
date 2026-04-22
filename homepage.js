@@ -10,21 +10,21 @@ let slides = [];
 
 // LOAD IMAGES FROM FIREBASE
 async function loadSlides() {
-  const snapshot = await getDocs(collection(db, "homepage_images"));
-
-  slides = snapshot.docs.map(doc => doc.data());
-
-  renderSlides();
+  try {
+    const snapshot = await getDocs(collection(db, "homepage_images"));
+ 
+    slides = snapshot.docs.map(doc => doc.data());
+ 
+    renderSlides();
+  } catch (error) {
+    console.error("Failed to load slides:", error);
+  }
 }
 
 function renderSlides() {
   slidesContainer.innerHTML = slides.map(item => `
     <div class="slide">
       <img src="${item.image}" alt="">
-      <div class="slide-text">
-        <h2>${item.title}</h2>
-        <p>${item.subtitle}</p>
-      </div>
     </div>
   `).join("");
 
