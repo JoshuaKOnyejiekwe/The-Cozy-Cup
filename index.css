@@ -12,7 +12,7 @@ body {
   padding: 1rem;
   background: #f1f8f6;
   border: 2px solid #000;
-  position: sticky;  /*remove if it bugs out*/
+  position: sticky;  /* nav will follow if you scroll down */
   top: 0;
   z-index: 100;
 }
@@ -57,7 +57,7 @@ body {
   padding: 4rem;
   background: #f3f1e7;
   border: 2px solid #000;
-  background: linear-gradient(135deg, #f3f1e7 60%, #d4e9e2 100%);     /*remove if it bugs out*/
+  /*background: linear-gradient(135deg, #f3f1e7 60%, #d4e9e2 100%);     remove if it bugs out*/
   min-height: 80vh;
 }
 
@@ -68,30 +68,6 @@ body {
   transition: 0.3s ease;
 }
 
-.flextext {                                       /*remove if it bugs out*/
-  max-width: 480px;
-}
- 
-.flextext h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  line-height: 1.2;
-  color: #1e3932;
-  margin-bottom: 1rem;
-}
- 
-.flextext p {
-  font-size: 1.1rem;
-  color: #4a4a4a;
-  margin-bottom: 1.5rem;
-  line-height: 1.7;
-}
- 
-.underline {
-  text-decoration: underline;
-  color: #007a33;
-  font-weight: 600;
-}*/
 
 .FlexboxContent img {
   width: 150%;
