@@ -55,14 +55,35 @@ body {
   align-items: center;
   gap: 10rem;
   padding: 4rem;
-  /* background: #f3f1e7; */
+  /*background: #f3f1e7; */
   /*border: 2px solid #000; */
   background: linear-gradient(135deg, #f3f1e7 60%, #d4e9e2 100%);     /* remove if it bugs out*/
-  min-height: 80vh;
+  /*min-height: 80vh; */
 }
 
 .flextext {
   max-width: 480px;
+}
+
+.flextext h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #1e3932;
+  margin-bottom: 1rem;
+}
+
+.flextext p {
+  font-size: 1.1rem;
+  color: #4a4a4a;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+ 
+.underline {
+  text-decoration: underline;
+  color: #007a33;
+  font-weight: 600;
 }
 
 .FlexboxContent {
