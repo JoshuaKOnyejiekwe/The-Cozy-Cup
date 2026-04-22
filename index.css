@@ -114,8 +114,8 @@ body {
 }
 
 .slide img { /* Handles the images */
-  width: 10%;          /* Stretches the image to fill the entire slide box. */
-  height: 120%;         /* Stretches the image to fill the entire slide box. */
+  width: 100%;          /* Stretches the image to fill the entire slide box. */
+  height: 100%;         /* Stretches the image to fill the entire slide box. */
   object-fit: cover;    /* Keeps the image's aspect ratio, it crops instead of stretching/squishing. Like zooming in to fill the box without distorting it. */
   border-radius: 16px;   /* Rounds the corners of the image. */
 }
