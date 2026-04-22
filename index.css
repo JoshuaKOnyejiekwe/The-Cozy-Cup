@@ -58,7 +58,7 @@ body {
   /*background: #f3f1e7; */
   /*border: 2px solid #000; */
   background: linear-gradient(135deg, #f3f1e7 60%, #d4e9e2 100%);     /* remove if it bugs out*/
-  min-height: 70vh;
+  /* min-height: 70vh; */
 }
 
 .flextext {
