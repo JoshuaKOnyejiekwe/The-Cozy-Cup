@@ -55,5 +55,3 @@ setInterval(() => {
 
 // INIT
 loadSlides();
-
-<script type="module" src="homepage.js"></script>
