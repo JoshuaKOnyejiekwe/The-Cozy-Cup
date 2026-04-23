@@ -53,7 +53,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10rem;
+  gap: 4rem;
   padding: 4rem;
   /*background: #f3f1e7; */
   /*border: 2px solid #000; */
@@ -86,19 +86,14 @@ body {
   font-weight: 600;
 }
 
-.FlexboxContent {
-  max-width: 520px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  transition: 0.3s ease;
-}
-
 .slideshow-container {
   position: relative;
-  width: 950px;     /* ← controls how wide the slideshow is */
+  width: 100%;     
+  max-width: 950px;  /* ← controls how wide the slideshow is */
   height: 775px;    /*← controls how tall the slideshow is  */
   overflow: hidden;
   border-radius: 16px;
+  border: 5px solid red;
   flex-shrink: 0;
 }
 
