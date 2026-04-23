@@ -96,7 +96,7 @@ body {
 .slideshow-container {
   position: relative;
   width: 950px;     /* ← controls how wide the slideshow is */
-  height: 750px;    /*← controls how tall the slideshow is  */
+  height: 775px;    /*← controls how tall the slideshow is  */
   overflow: hidden;
   border-radius: 16px;
   flex-shrink: 0;
