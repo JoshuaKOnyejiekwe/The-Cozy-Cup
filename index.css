@@ -106,6 +106,7 @@ body {
   display: flex;  /* Lines all the slides up horizontally in a row, side by side. */
   height: 100%;   /* Makes the slides row fill the full height of the container. */
   transition: transform 0.5s ease; /* creates smooth sliding animation when you click next/prev. Without this it would just snap instantly. */
+  transform: translateX(0%);
 }
 
 .slide {

@@ -28,6 +28,7 @@ function renderSlides() {
     </div>
   `).join("");
 
+  currentIndex = 0;
   updateSlidePosition();
 }
 
