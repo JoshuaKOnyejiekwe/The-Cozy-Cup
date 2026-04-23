@@ -15,12 +15,14 @@ async function loadSlides() {
  
     slides = snapshot.docs.map(doc => doc.data());
  
-    renderSlides();
+    console.log(slides);
 
-    setInterval(() => {
-      currentIndex = (currentIndex + 1) % slides.length;
-      updateSlidePosition();
-    }, 5000);
+    renderSlides();
+    
+    // setInterval(() => {
+    // currentIndex = (currentIndex + 1) % slides.length;
+    //  updateSlidePosition();
+    // }, 5000);
 
   } catch (error) {
     console.error("Failed to load slides:", error);
