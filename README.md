@@ -4,7 +4,7 @@ A full-stack project that is actively in development
 
 This project is Full-Stack website built from scratch. Creating my own personalized production-level website while, reinforcing full-stack development tools and skills.
 
-The project utilizes:
+The project empathizes:
 
 Responsive layouts
 
