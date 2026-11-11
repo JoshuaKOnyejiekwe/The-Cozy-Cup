@@ -16,4 +16,4 @@ Front-end and back-end integration
 
 Front End: HTML/CSS , Java Script
 
-Back End: PHP , SQL
+Back End: FireBase , SQL , VITE
