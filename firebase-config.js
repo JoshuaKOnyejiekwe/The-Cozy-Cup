@@ -14,13 +14,15 @@ import {
 
 // Firebase config
 const firebaseConfig = {
-  apiKey: "AIzaSyBy-eAC_E8vJL_ug04OkLWOZOgXC6rmQv8",
-  authDomain: "thecozycup-f6615.firebaseapp.com",
-  projectId: "thecozycup-f6615",
-  storageBucket: "thecozycup-f6615.appspot.com",
-  messagingSenderId: "90690927432",
-  appId: "1:90690927432:web:85bf96dbcc00f80566117d"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
+
+console.log(import.meta.env.VITE_FIREBASE_API_KEY ? "key loaded" : "key missing");
 
 // Init Firebase
 const app = initializeApp(firebaseConfig);
